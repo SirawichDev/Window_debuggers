@@ -1,5 +1,6 @@
 from ctypes import *
 
-libc = cdll("libc.so.6")
-msg_str = "Hello miew~"
+libc = cdll.msvcrt
+print(libc)
+msg_str = "Hello miew~\n"
 libc.printf("Testing: %s",msg_str)

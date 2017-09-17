@@ -2,10 +2,10 @@ from ctypes import *
 
 msvcrt = cdll.msvcrt
 
-raw_input("Press any key.")
+input("Press any key.")
 
 #Create 8-byte destination Buffer
-Buff = c_char_p("AAAAAAAA")
+Buff = c_char_p("AA")
 
 #The overflow string
 
